@@ -1,0 +1,17 @@
+.stars {
+  display: flex;
+  flex-direction: row;
+
+  &__star:not(:last-of-type) {
+    background-image: url(../images/star-active.svg);
+    margin-right: 4px;
+
+    @include stars-parameters;
+  }
+
+  &__star:last-child {
+    background-image: url(../images/star.svg);
+
+    @include stars-parameters;
+  }
+}
