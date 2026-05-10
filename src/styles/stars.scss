@@ -3,13 +3,16 @@
   flex-direction: row;
 
   &__star:not(:last-of-type) {
-    background-image: url(../images/star-active.svg);
     margin-right: 4px;
+  }
+
+  &__star:nth-child(-n + 4) {
+    background-image: url(../images/star-active.svg);
 
     @include stars-parameters;
   }
 
-  &__star:last-child {
+  &__star:nth-child(5) {
     background-image: url(../images/star.svg);
 
     @include stars-parameters;

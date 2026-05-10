@@ -35,8 +35,10 @@
   }
 }
 
-.imac-description__model {
-  margin-bottom: $indent-bottom;
+.imac-description {
+  &__model {
+    margin-bottom: $indent-bottom;
+  }
 }
 
 .reviews {
